@@ -1,0 +1,13 @@
+[package]
+name = "lmul-test"
+version = "0.1.0"
+authors = ["Daniel Seitz <dnseitz@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
+
+[profile.dev]
+panic = "abort"
